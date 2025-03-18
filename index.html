@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Hampers</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts for classy typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Eid Hampers</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Celebrate Eid with Our Special Hampers</h1>
+        <p>Spread joy and blessings this Eid with our beautifully crafted hampers.</p>
+        <a href="#products" class="cta-button">Shop Now</a>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products">
+        <h2>Our Hampers</h2>
+        <div class="product-grid">
+            <!-- ₹5,000 Hamper -->
+            <div class="product-card">
+                <img src="images/eid-hamper.jpg" alt="₹5,000 Eid Hamper">
+                <h3>Eid Hamper - ₹5,000</h3>
+                <p>A beautifully crafted gift to celebrate the spirit of Eid.</p>
+                <div class="product-actions">
+                    <button class="buy-now" data-id="1">
+                        <i class="fas fa-shopping-cart"></i> Buy Now
+                    </button>
+                    <button class="view-details" data-id="1">
+                        <i class="fas fa-info-circle"></i> View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- ₹10,000 Hamper -->
+            <div class="product-card">
+                <img src="images/eid-luxe-hamper.jpg" alt="₹10,000 Eid Luxe Hamper">
+                <h3>Eid Luxe Hamper - ₹10,000</h3>
+                <p>A premium selection of gifts to celebrate Eid in elegance.</p>
+                <div class="product-actions">
+                    <button class="buy-now" data-id="2">
+                        <i class="fas fa-shopping-cart"></i> Buy Now
+                    </button>
+                    <button class="view-details" data-id="2">
+                        <i class="fas fa-info-circle"></i> View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- ₹15,000 Hamper -->
+            <div class="product-card">
+                <img src="images/eid-prestige-hamper.jpg" alt="₹15,000 Eid Prestige Hamper">
+                <h3>Eid Prestige Hamper - ₹15,000</h3>
+                <p>A grand and luxurious Eid hamper for a truly special celebration.</p>
+                <div class="product-actions">
+                    <button class="buy-now" data-id="3">
+                        <i class="fas fa-shopping-cart"></i> Buy Now
+                    </button>
+                    <button class="view-details" data-id="3">
+                        <i class="fas fa-info-circle"></i> View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Product Details -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="Product Image" style="width: 100%; max-width: 300px; margin: 10px 0;">
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Eid Hampers. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
