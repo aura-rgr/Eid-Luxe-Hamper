@@ -15,14 +15,15 @@ const products = [
         image: "images/eid-hamper.jpg",
         description: `
             A charming and traditional Eid hamper filled with warmth and blessings. Features:
-            ✨ Decorative Basket & Packaging
-            ✨ Premium Dates (500g)
+            ✨ Decorative Basket & Packaging 
+            ✨ Premium Dates (500g) 
             ✨ Assorted Sweets (1kg)
             ✨ Handcrafted Tasbeeh
             ✨ Luxury Attar (2 x 10ml Bottles)
             ✨ Dry Fruits Assortment (500g)
             ✨ Customised Eid Mubarak Greeting Card
-        `
+        `,
+        discount: "5% OFF"
     },
     {
         id: 2,
@@ -38,7 +39,8 @@ const products = [
             ✨ Rooh Afza (2 Bottles)
             ✨ Organic Honey (300g)
             ✨ Perfume Gift Set (4 x 10ml Attars)
-        `
+        `,
+        discount: "5% OFF"
     },
     {
         id: 3,
@@ -56,7 +58,8 @@ const products = [
             ✨ Incense Set (Bakhoor with Burner)
             ✨ Embroidered Prayer Mat
             ✨ Eid Mubarak Greeting Cards (4 pcs)
-        `
+        `,
+        discount: "5% OFF"
     }
 ];
 
@@ -91,3 +94,21 @@ document.querySelectorAll(".buy-now").forEach(button => {
         alert(`You have purchased: ${product.title}`);
     });
 });
+
+// Gift functionality
+document.querySelectorAll(".gift-now").forEach(button => {
+    button.addEventListener("click", () => {
+        const productId = button.getAttribute("data-id");
+        const product = products.find(p => p.id == productId);
+        alert(`You have gifted: ${product.title}`);
+    });
+});
+
+// Footer content
+const footer = document.createElement("footer");
+footer.innerHTML = `
+    <p>Contact us: gifts&cohampers@gmail.com</p>
+    <p>Location: 12, Jubilee Road, Bandra West, Mumbai, India</p>
+    <p>Phone: +91 98765 43210</p>
+`;
+document.body.appendChild(footer);
